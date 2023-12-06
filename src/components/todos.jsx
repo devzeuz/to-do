@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Todo() {
   const [inputValue, setInputValue] = useState("");
   const [todoList, setTodoList] = useState(() => {
     const localValue = localStorage.getItem("TODOLIST");
-
+    if (localValue === null) return [];
     return JSON.parse(localValue);
   });
   const [hasError, setError] = useState(false);
