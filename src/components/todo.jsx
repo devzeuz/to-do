@@ -47,6 +47,7 @@ export default function Todo() {
     <>
       <div className=" flex justify-center ">
         <div className="bg-[#f3f3f3] w-96 flex  flex-col  p-5 rounded-xl">
+          {/* INPUT SECTION */}
           <div className="bg-[white]   flex items-center p-2 rounded-full w-72 justify-center">
             <input
               type="text"
